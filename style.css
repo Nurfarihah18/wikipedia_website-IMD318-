@@ -1,0 +1,337 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #205295;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background: #0A2647;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+#clock-section {
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #0A2647; /* Match your theme color */
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+/* Search Bar Styles */
+#search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add spacing between input and button */
+}
+
+#search input[type="text"] {
+    flex: 1; /* Optional: Allow input to resize properly */
+    max-width: 500px; /* Set a reasonable max width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search button {
+    padding: 10px 20px;
+    background: #0A2647;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+section h2 {
+    color: #0A2647;
+    margin-bottom: 10px;
+}
+
+#uthm-image {
+    width: 100%; /* Ensure the image scales to fit its container */
+    max-width: 600px; /* Set a maximum width to prevent it from being too large */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; /* Optional: Add rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto; /* Center the image within its container */
+}
+
+/* Video Styles */
+video {
+    display: block;
+    max-width: 100%; /* Ensure the video fits within its container */
+    margin: 20px auto; /* Center the video horizontally */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Audio Styles */
+audio {
+    display: block;
+    margin: 20px auto; /* Center the audio player horizontally */
+    width: 100%; /* Ensure the audio player spans the container */
+    max-width: 600px; /* Optional: Set a max width for better control */
+}
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #0A2647;
+    color: white;
+}
+
+/* Faculties and Programs Section */
+.dropdown {
+    margin-bottom: 10px;
+    max-width: 600px; /* Set a maximum width for the dropdown container */
+    margin: 0 auto; /* Center the dropdown container */
+}
+
+.dropdown-item {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%; /* Maintain width relative to the container */
+    color: #333;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: #e9e9e9;
+}
+
+
+.programs {
+    display: none; /* Hide by default */
+    margin-left: 20px;
+}
+
+.programs ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.programs li {
+    margin-bottom: 5px;
+}
+
+/* Achievements Section Styles */
+.achievements-list {
+    margin-top: 20px;
+}
+
+.achievement-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.achievement-item h3 {
+    cursor: pointer;
+    margin: 0;
+    font-size: 18px;
+    color: #0A2647;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.achievement-item h3:hover {
+    background-color: #d9d9d9;
+}
+
+.description-box {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Show description when hovering over the title */
+.achievement-item:hover .description-box {
+    display: block;
+}
+
+
+/* Gallery Section Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%; /* Ensure all images take the full width of the grid column */
+    height: 200px; /* Set a consistent height for all images */
+    object-fit: cover; /* Ensure the image is cropped proportionally */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #0A2647;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Downloads Section Styles */
+#downloads {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Spacing between buttons */
+}
+
+.download-btn button {
+    background: #0A2647;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between icon and text */
+    transition: background 0.3s ease;
+}
+
+.download-btn button:hover {
+    background: #0056b3;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #0A2647;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 30px; /* Adjust the size to your preference */
+    height: auto; /* Keeps the aspect ratio */
+    margin: 5px; /* Adds some spacing between icons */
+}
