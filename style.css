@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,12 +7,86 @@ body {
     color: white;
 }
 
-/* Header Styles */
-header {
-    background: #0A2647;
-    color: white;
-    padding: 20px 10px;
+/* Header/Banner Styles */
+header.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+}
+
+/* Style for Company Logo and Name */
+.company-logo {
+    position: fixed; 
+    top: 10px;        
+    left: 10px;       
+    display: flex;
+    align-items: center;
+    z-index: 1000;    /* Ensure it stays on top of other elements */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.company-logo .logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.company-logo .company-name {
+    font-size: 14px; 
+    color: white; 
+    font-weight: bold;
+}
+
+/* Slideshow Styling */
+.banner-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Overlay Content (Centered on Slideshow) */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #FFD700; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+    font-size: 20px;
+    color: #87CEEB;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-gif img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 /* Navigation Bar Styles */
@@ -42,8 +116,8 @@ nav ul li a:hover {
 }
 
 #clock-section {
-    background-color: #f0f0f0; /* Light background for contrast */
-    color: #0A2647; /* Match your theme color */
+    background-color: #f0f0f0; 
+    color: #0A2647; 
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
     padding: 10px 0;
@@ -60,8 +134,8 @@ nav ul li a:hover {
 }
 
 #search input[type="text"] {
-    flex: 1; /* Optional: Allow input to resize properly */
-    max-width: 500px; /* Set a reasonable max width */
+    flex: 1; 
+    max-width: 500px; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -93,30 +167,30 @@ section h2 {
 }
 
 #uthm-image {
-    width: 100%; /* Ensure the image scales to fit its container */
-    max-width: 600px; /* Set a maximum width to prevent it from being too large */
-    height: auto; /* Maintain the aspect ratio of the image */
-    border-radius: 10px; /* Optional: Add rounded corners for aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    display: block; /* Ensure the image behaves like a block element */
-    margin: 0 auto; /* Center the image within its container */
+    width: 100%; 
+    max-width: 600px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    margin: 0 auto; 
 }
 
 /* Video Styles */
 video {
     display: block;
-    max-width: 100%; /* Ensure the video fits within its container */
-    margin: 20px auto; /* Center the video horizontally */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    max-width: 100%; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Audio Styles */
 audio {
     display: block;
-    margin: 20px auto; /* Center the audio player horizontally */
-    width: 100%; /* Ensure the audio player spans the container */
-    max-width: 600px; /* Optional: Set a max width for better control */
+    margin: 20px auto; 
+    width: 100%; 
+    max-width: 600px; 
 }
 
 
@@ -141,8 +215,8 @@ table th {
 /* Faculties and Programs Section */
 .dropdown {
     margin-bottom: 10px;
-    max-width: 600px; /* Set a maximum width for the dropdown container */
-    margin: 0 auto; /* Center the dropdown container */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .dropdown-item {
@@ -152,7 +226,7 @@ table th {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 5px;
-    width: 100%; /* Maintain width relative to the container */
+    width: 100%; 
     color: #333;
     text-align: left;
 }
@@ -163,7 +237,7 @@ table th {
 
 
 .programs {
-    display: none; /* Hide by default */
+    display: none; 
     margin-left: 20px;
 }
 
@@ -204,7 +278,7 @@ table th {
 }
 
 .description-box {
-    display: none; /* Hidden by default */
+    display: none; 
     margin-top: 10px;
     font-size: 14px;
     color: #333;
@@ -234,11 +308,11 @@ table th {
 }
 
 .gallery-item img {
-    width: 100%; /* Ensure all images take the full width of the grid column */
-    height: 200px; /* Set a consistent height for all images */
-    object-fit: cover; /* Ensure the image is cropped proportionally */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .gallery-item p {
@@ -295,7 +369,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Spacing between buttons */
+    gap: 15px; 
 }
 
 .download-btn button {
@@ -308,7 +382,7 @@ form button:hover {
     font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Spacing between icon and text */
+    gap: 10px; 
     transition: background 0.3s ease;
 }
 
@@ -331,7 +405,7 @@ footer {
 }
 
 footer img {
-    width: 30px; /* Adjust the size to your preference */
-    height: auto; /* Keeps the aspect ratio */
-    margin: 5px; /* Adds some spacing between icons */
+    width: 30px; 
+    height: auto;
+    margin: 5px; 
 }
